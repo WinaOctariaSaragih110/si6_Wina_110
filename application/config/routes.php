@@ -19,7 +19,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 | Please see the user guide for complete details:
 |
-|	https://codeigniter.com/user_guide/general/routing.html
+|	https://codeigniter.com/userguide3/general/routing.html
 |
 | -------------------------------------------------------------------------
 | RESERVED ROUTES
@@ -52,3 +52,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+$route['default_controller'] = 'helloworld';
+$route['404_override'] = '';
+$route['translate_uri_dashes'] = FALSE;
+
+$route['homepage'] = 'web/web_about';
+$route['deatil_produk/(:num)(:any)'] = 'hello/detail_produk/$1/$2';
+
+$route['default_controller'] = 'admin';
+$route['404_override'] = '';
+$route['translate_uri_dashes'] = FALSE;
+
+$route['default_controller'] = 'pendapatan';
+$route['404_override'] = '';
+$route['translate_uri_dashes'] = FALSE;
+
